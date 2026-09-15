@@ -9,6 +9,8 @@ This script can be added to any Maya shelf and, when clicked on, will cycle thro
 Right now, to add orthographic cameras to the cycle, you must edit the script manually. You can do so by right-clicking on the script button in the shelf and selecting "Edit".
 Then add any camera to the 'string $addtCameras[]' on line 7. Be sure to enclose the camera name in double quotation marks "". 
 
+See a video demo here: https://youtu.be/EB8CezkSbOQ
+
 Future features:
 - Create a UI where users could select what cameras the button will cycle through, rather than requiring users to edit the code directly
 - Have a series of buttons for each camera for the user to quickly switch to any camera, rather than cycling through all the cameras
