@@ -1,0 +1,14 @@
+//Modified version of script from Kitty Fung
+//Original script only switched through perspective cameras with no ability to add orthographic views
+
+$currentCamera = `lookThru -q`;
+string $allCameras[];
+$allCameras = `listCameras -p`; //This will select perspective cameras only
+string $addtCameras[] = {"top", "front"}; //Add any orthographic cameras
+appendStringArray($allCameras, $addtCameras, size($addtCameras));
+for($pos=0;$pos<size($allCameras);$pos++)
+{
+if($currentCamera == $allCameras[$pos]) $nextCamera = $pos+1;
+}
+if($nextCamera>=size($allCameras)) $nextCamera = 0;
+lookThru $allCameras[$nextCamera];
