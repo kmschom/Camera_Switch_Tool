@@ -1,3 +1,4 @@
+# Camera_Switch_Tool
 A small script for quickly cycling through all perspective cameras and select orthographic cameras in the Maya viewport.
 
 I was frustrated with the built-in systems for switching between difference camera views. 
